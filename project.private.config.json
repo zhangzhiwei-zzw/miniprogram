@@ -1,0 +1,30 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/community/community",
+          "pathName": "pages/community/community",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/addcomment/addcomment",
+          "pathName": "pages/addcomment/addcomment",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

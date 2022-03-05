@@ -1,0 +1,42 @@
+<!--pages/expcon/expcon.wxml-->
+<image mode="widthFix" src="/imgs/expcon.jpeg" />
+
+<view class="block1">
+<view class="title">
+<text>现在您的姿势让颈椎承受多少斤？</text>
+</view>
+<view style="margin: 10rpx; font-size: 35rpx;">
+本设备通过测量颈椎弯曲角度，把您当前的颈椎状态分为以下四类：
+<view class="item1">
+    1. 良好表示您当前颈椎弯曲角度在0~15度之间；
+</view>
+<view class="item1">
+    2. 一般表示您当前颈椎弯曲角度在15~30度之间；
+</view>
+<view class="item1">
+    3. 较差表示您当前颈椎弯曲角度在30~45度之间；
+</view>
+<view class="item1">
+    4. 差表示您当前颈椎弯曲角度大于45度。
+</view>
+</view>
+</view>
+
+<view class="block1">
+<view>
+<view class="title">来测测你处在颈椎病第几级叭？</view>
+<view style="margin: 10rpx; font-size: 35rpx;">
+一般人可能只是在第1级，如果出现第2、3级时，就该重视起来，采取相应措施了，保养我们的颈椎喽~
+<view class="item2">一级：脖子酸痛、僵硬(这是颈椎病的最常见症状，也是预警信号)。</view>
+<view class="item2">二级：肩膀、后背(尤其是肩胛骨内侧区域)酸痛，僵硬。</view>
+<view class="item2">三级：睡觉经常落枕(落枕是一种早期颈椎病)。</view>
+<view class="item2">四级：胳膊出现疼痛，麻木，严重的时候出现过电样的感觉(从这一级开始最好去医院)。</view>
+<view class="item2">五级：手变笨，不灵活(从这级开始需要尽快确诊)。</view>
+<view class="item2">六级：写字开始变化，吃饭开始用勺，不敢用筷子。</view>
+<view class="item2">七级：走路出现不稳、发飘、跑偏、走路像踩在棉花上，一脚深一脚浅的感觉。</view>
+<view class="item2">八级：四肢出现无力感，走路出现跛行(从这级开始需要尽快手术)</view>
+<view class="item2">九级：小便、大便、性功能出现难言之隐。</view>
+<view class="item2">十级：出现瘫痪，下不了床。</view>
+</view>
+</view>
+</view>

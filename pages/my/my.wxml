@@ -1,0 +1,30 @@
+<!--pages/my/my.wxml-->
+<view class="user_info_wrap">
+    <view wx:if="{{userInfo.avatarUrl}}" class="user_img_wrap">
+        <image class="user_bg" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+        <view class="user_info">
+            <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+            <view class="user_name">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+    <view wx:else class="user_login">
+    <image class="user_bg2" src="https://inews.gtimg.com/newsapp_ls/0/14488640193/0.jpg" mode="widthFix">
+        </image>
+    <view class="user_btn">
+        <button bindtap="getUserProfile">登录</button>
+    </view>
+    </view>
+</view>
+
+<view class="per_info" bindtap="handlepertap">
+    个人信息
+</view>
+<view class="exe_info">
+    <navigator url="/pages/exedes/exedes">运动记录</navigator>
+</view>
+<view class="nohealth">
+    <navigator url="/pages/nohealth/nohealth">低头记录</navigator>
+</view>
+<view class="aboutus">
+    <navigator url="/pages/aboutus/aboutus">关于我们</navigator>
+</view>

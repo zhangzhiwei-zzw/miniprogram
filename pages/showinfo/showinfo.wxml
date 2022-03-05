@@ -1,0 +1,43 @@
+<!--pages/showinfo/showinfo.wxml-->
+<view class='baseInfo'>
+    <text>个人信息</text>
+</view>
+
+<view class='list'>
+    <view class='name'>
+        <text class="left">姓名</text>
+        <text class="right">{{information.name}}</text>
+    </view>
+    <view class='sex'>
+        <text class="left">性别</text>
+        <text class="right">{{information.sex}}</text>
+    </view>
+    <view class='phone'>
+        <text class="left">年龄</text>
+        <text class="right">{{information.age}}</text>
+    </view>
+    <view class='phone'>
+        <text class="left">职业</text>
+        <text class="right">{{information.work}}</text>
+    </view>
+    <view class='phone'>
+        <text class="left">身高（CM）</text>
+        <text class="right">{{information.height}}</text>
+    </view>
+    <view class='phone'>
+        <text class="left">体重（KG）</text>
+        <text class="right">{{information.weight}}</text>
+    </view>
+    <view class='phone'>
+        <text class="left">手机号</text>
+        <text class="right">{{information.phone}}</text>
+    </view>
+    <view class='phone'>
+        <text class="left">邮箱</text>
+        <text class="right">{{information.email}}</text>
+    </view>
+</view>
+
+<view class="correct">
+    <navigator url="/pages/perinfo/perinfo">修改个人信息</navigator>
+</view>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/expcon/expcon",
+    "pages/bluetooth/bluetooth",
+    "pages/exercise/exercise",
+    "pages/community/community",
+    "pages/my/my",
+    "pages/perinfo/perinfo",
+    "pages/showinfo/showinfo",
+    "pages/exedes/exedes",
+    "pages/nohealth/nohealth",
+    "pages/aboutus/aboutus",
+    "pages/logs/logs",
+    "pages/addcomment/addcomment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffc0cb",
+    "navigationBarTitleText": "颈椎病防治私人医生",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "检测",
+        "iconPath": "icons/checkout1.png",
+        "selectedIconPath": "icons/checkout2.png"
+      },
+      {
+        "pagePath": "pages/exercise/exercise",
+        "text": "运动",
+        "iconPath": "icons/exercise1.png",
+        "selectedIconPath": "icons/exercise2.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "icons/community1.png",
+        "selectedIconPath": "icons/community2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icons/my1.png",
+        "selectedIconPath": "icons/my2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,64 @@
+<view class='baseInfo'>
+  <text>修改个人信息</text>
+</view>
+<form bindsubmit="formSubmit">
+  <view class='list'>
+    <view class='name'>
+      <text>姓名</text>
+      <input name="name" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的姓名'></input>
+    </view>
+
+    <view class='sex'>
+      <text>性别</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{sex}}" wx:key="index">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='phone'>
+      <text>年龄</text>
+      <input name="nl" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的年龄'></input>
+    </view>
+
+    <view class='phone'>
+      <text>职业</text>
+      <input name="zy" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的职业'></input>
+    </view>
+
+    <view class='phone'>
+      <text>身高(CM)</text>
+      <input name="sg" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的身高'></input>
+    </view>
+
+    <view class='phone'>
+      <text>体重(KG)</text>
+      <input name="tz" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的体重'></input>
+    </view>
+
+    <view class='phone'>
+      <text>手机号</text>
+      <input name="sjh" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的手机号'></input>
+    </view>
+
+    <view class='phone'>
+      <text>邮箱</text>
+      <input name="yx" type='text' placeholder-style='font-size:28rpx;' placeholder='请输入您的邮箱'></input>
+    </view>
+  </view>
+
+  <button class="savebtn" form-type='submit'>保存</button>
+</form>
+
+<!-- 模态框 -->
+<modal class="modal" title='要保存的信息' hidden="{{modalHidden}}" bindcancel='modalCancel' bindconfirm='modalConfirm'>
+  <view>姓名:{{information.name}}</view>
+  <view>姓别:{{userSex}}</view>
+  <view>年龄:{{information.nl}}</view>
+  <view>职业：{{information.zy}}</view>
+  <view>身高:{{information.sg}}</view>
+  <view>体重：{{information.tz}}</view>
+  <view>手机号：{{information.sjh}}</view>
+  <view>邮箱：{{information.yx}}</view>
+</modal>

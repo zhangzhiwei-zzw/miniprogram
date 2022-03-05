@@ -1,0 +1,27 @@
+<view class="fb_main">
+  <view class="fb_content">
+    <textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="输入您想输入的" name="" id="" cols="30" rows="10"></textarea>
+    <view class="fb_tool">
+      <button id="btn1" size="mini" bindtap="handleChooseImg">+</button>
+      <view class="up_img_item"
+      wx:for="{{chooseImgs}}"
+      wx:key="*this"
+      bindtap="handleRemoveImg"
+      data-index="{{index}}"
+      >
+        <Upimg src="{{item}}"></Upimg>
+      </view>
+    </view>
+    <view class="position">
+      <button size="mini" bindtap="handleChoosePos">选择位置</button>
+      <view class="pos">{{position}}</view>
+    </view>
+  </view>
+  <view class="form_btn_wrap">
+    <button id="btn2" type="warn" size="mini" bindtap="handleFormSubmit">
+      <icon type="success_no_circle" size="23" color="white">
+      </icon>
+      提交
+    </button>
+  </view>
+</view>

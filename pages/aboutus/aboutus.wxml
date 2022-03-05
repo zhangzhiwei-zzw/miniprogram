@@ -1,0 +1,6 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view>
+    <text>这个小程序需要配合BWT901BLECL5.0硬件设备一起使用。\n</text>
+    <text>它可以实时显示当前您的颈椎状态，也可以在您帮助您进行有效的颈椎运动。\n</text>
+    <text>希望我们的产品能为您提供良好的体验，呵护您的颈椎。\n</text>
+</view>

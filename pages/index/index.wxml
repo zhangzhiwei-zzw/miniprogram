@@ -1,0 +1,58 @@
+<wxs module="utils">
+module.exports.max = function(n1, n2) {
+  return Math.max(n1, n2)
+}
+module.exports.len = function(arr) {
+  arr = arr || []
+  return arr.length
+}
+</wxs>
+<view class="btgroup">
+<button class="bt" bindtap="openBluetoothAdapter">开始扫描</button>
+<button class="bt" bindtap="stopBluetoothDevicesDiscovery">停止扫描</button>
+<button class="bt" bindtap="closeBluetoothAdapter">结束检测</button>
+</view>
+
+
+<view class="devices_summary">已发现 {{devices.length}} 个外围设备：</view>
+<scroll-view class="device_list" scroll-y scroll-with-animation>
+  <view wx:for="{{devices}}" wx:key="index"
+   data-device-id="{{item.deviceId}}"
+   data-name="{{item.name || item.localName}}"
+   bindtap="createBLEConnection" 
+   class="device_item"
+   hover-class="device_item_hover">
+    <view style="font-size: 32rpx; color: #333;">点击连接：{{item.name}}</view>
+    <view style="font-size: 24rpx">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>
+    <!-- <view style="font-size: 10px">UUID: {{item.deviceId}}</view>
+    <view style="font-size: 10px">Service数量: {{utils.len(item.advertisServiceUUIDs)}}</view> -->
+  </view>
+</scroll-view>
+
+<view class="connected_info" wx:if="{{connected}}">
+  <view>
+    <text style="font-size: 32rpx">已连接到 {{name}}</text>
+    <view class="operation">
+    <!-- <button class="btoper" wx:if="{{canWrite}}" size="mini" bindtap="writeBLECharacteristicValue">写数据</button> -->
+    <button class="btoper" size="mini" bindtap="closeBLEConnection">断开连接</button>
+    </view>
+  </view>
+  <view wx:for="{{chs}}" wx:key="index" style="font-size: 40rpx; margin-top: 25rpx;">
+    <!-- <view>特性UUID: {{item.uuid}}</view> -->
+    <!-- <view>特性值: {{item.value}}</view> -->
+    <view>{{condition}}</view>
+  </view>
+</view>
+<view class="connected_info" style="text-align: center;" wx:else>
+<text>\n未连接设备</text>
+</view>
+
+<view class="navgroup">
+<image mode="widthFix" src="/imgs/index_love.jpeg" />
+<view class="nav1">
+<navigator url="/pages/expcon/expcon">颈椎状态说明</navigator>
+</view>
+<view class="nav2">
+<navigator url="/pages/nohealth/nohealth">查询今日颈椎状态统计数据</navigator>
+</view>
+</view>

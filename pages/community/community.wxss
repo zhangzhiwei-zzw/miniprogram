@@ -1,0 +1,80 @@
+.fonter{
+  margin-top: 50rpx;
+  background-color: white;
+}
+.item{
+  margin: 20rpx;
+  padding: 10rpx;
+  border-top:  rgba(153, 153, 153, 1) 2rpx solid;
+  border-bottom: rgba(153, 153, 153, 1) 2rpx solid;
+}
+.avatar{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin: 10rpx;
+}
+.name{
+  display: flex;
+  align-items: center;
+}
+.pic_name{
+  color: rgba(0, 0, 0, 1);
+  font-size: 38rpx;
+  padding-left: 20rpx;
+}
+image{
+  width: 46rpx;
+  height: 46rpx;
+}
+.content{
+  color: rgba(80, 80, 80, 1);
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+.position{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(80, 80, 80, 1);
+	font-size: 24rpx;
+}
+.icon{
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content .img image{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 10rpx;
+}
+swiper swiper-item image{
+  width: 265rpx;
+  height: 170rpx;
+}
+.swi{
+  width: 200rpx;
+  height: 171rpx;
+}
+#it{
+  display: flex;
+  justify-content: space-between;
+}
+.add{
+  background: #999999;
+  position: fixed;
+  bottom: 100rpx;
+  right: 60rpx;
+  border-radius: 100rpx;
+}
+.add image{
+  width: 100rpx;
+  height: 100rpx;
+}

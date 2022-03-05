@@ -1,0 +1,82 @@
+<!--pages/exercise/exercise.wxml-->
+<view class="nameinfo">
+    <text>动作库 - 四向点头</text>
+</view>
+<video style="width: 100%;" object-fit="cover" src="https://static1.keepcdn.com/chaos/0728/B008C059_main_s.mp4" autoplay="true" loop="true">
+</video>
+
+<view class="exebut">
+    <view>
+        <text style="font-size: 52rpx">四向点头</text>
+        <view class="operation">
+            <button class="btoper" size="mini" bindtap="openBluetoothAdapter">我也要练</button>
+            <button class="btoper" size="mini" bindtap="closeBluetoothAdapter">结束训练</button>
+        </view>
+    </view>
+</view>
+
+<view class="devices_summary"></view>
+<scroll-view class="device_list" scroll-y scroll-with-animation>
+    <view class="nodevice" wx:if="{{devices.length==0}}">未检测到设备</view>
+    <view wx:if="{{devices.length!=0}}" wx:for="{{devices}}" wx:key="index" data-device-id="{{item.deviceId}}" data-name="{{item.name || item.localName}}" bindtap="createBLEConnection" hover-class="device_item_hover">
+        <view class="operation1">
+        <text style="font-size: 32rpx">点击连接：{{item.name}}</text>
+        <text style="font-size: 24rpx">\n信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</text>
+        </view>
+        <view class="operation2">
+            <button class="btoper1" size="mini" bindtap="closeBLEConnection">断开连接</button>
+        </view>
+    </view>
+</scroll-view>
+
+<view class="connected_info" wx:if="{{connected}}">
+    <text style="font-size: 32rpx">已连接到 {{name}}</text>
+</view>
+<view class="connected_info" wx:else>
+    <text>未连接设备</text>
+</view>
+
+<view wx:if="{{condition==\"\"}}" class="result_info">
+    <text class="iconfont icon-cherry"></text> 此处将显示您的运动状态哦 <text class="iconfont icon-cherry"></text>
+</view>
+<view wx:if="{{condition!=\"\"}}" class="result_info">
+    <text class="iconfont icon-cherry"></text> {{condition}} <text class="iconfont icon-cherry"></text>
+</view>
+
+<!-- 动作详细说明 -->
+<view>
+<view class="title">动作详细说明</view>
+
+<view class="title1">步骤</view>
+<view class="content">
+<text class="iconfont icon-dian">坐在椅子上，双手自然搭在大腿上，保持腰背挺直，后背贴实椅子\n</text>
+<text class="iconfont icon-dian">头部按照一定次序向前、后、左、右四个方向转动</text>
+</view>
+
+
+<view class="title1">呼吸</view>
+<view class="content">
+<text class="iconfont icon-dian">自然呼吸</text>
+</view>
+
+<view class="title1">动作感觉</view>
+<view class="content">
+<text class="iconfont icon-dian">颈部有明显的发力和拉伸感</text>
+</view>
+<view class="imgroup" style="margin-bottom: 10rpx;">
+    <image mode="widthFix" src="https://static1.keepcdn.com/picture/exerciseimages/v2/58ad4afcfc6429793e57118c_female_front?v=202202091158"></image>
+    <image mode="widthFix" src="https://static1.keepcdn.com/picture/exerciseimages/v2/58ad4afcfc6429793e57118c_female_back?v=202202091158"></image>
+</view>
+
+<view class="title1">常见错误</view>
+<view class="content">
+<text class="iconfont icon-dian">错误：动作速度过快\n</text>
+<text class="iconfont icon-dian">解决：放慢动作，感受肌肉的发力与收缩</text>
+</view>
+
+<view class="title1">细节图示</view>
+<view class="content">
+<text class="iconfont icon-dian">动作全程下沉肩部，不要耸肩，完成每个点头时略微停顿一会儿，感受颈部的拉伸感</text>
+</view>
+<image mode="widthFix" style="width: 100%;" src="https://static1.gotokeep.com/picture/frame/1501042777644.jpg"></image>
+</view>

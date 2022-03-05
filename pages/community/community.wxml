@@ -1,0 +1,36 @@
+<view class="body">
+  <view class="fonter">
+    <view class="add" bindtap="handletap">
+      <image src="https://6c69-lipcloud-9xi74-7gez3k7ab9dfc7fb-1305629328.tcb.qcloud.la/%E5%9B%BE%E6%A0%87/%E6%B7%BB%E5%8A%A0.png"></image>
+    </view>
+    <view class="item" wx:for="{{comments}}" wx:key="*this">
+      <view class="name">
+          <image src="{{item.userurl}}" class="avatar"></image>
+        <view class="pic_name">{{item.username}}</view>
+      </view>
+      <view>{{item.content}}</view>
+      <view class="content">
+      <view wx:for="{{item.imageurls}}" wx:key="*this" class="img">
+        <image src="{{item}}" mode="widthFix"></image>
+      </view>
+      </view>
+      <view class="position">
+        <text wx:if="{{item.position}}">{{item.time}}   来自 {{item.position}}</text>
+        <text wx:else>{{item.time}} </text>
+        <view class="icon">
+          <navigator>
+            <image src="https://6c69-lipcloud-9xi74-7gez3k7ab9dfc7fb-1305629328.tcb.qcloud.la/%E5%9B%BE%E6%A0%87/%E6%94%B6%E8%97%8F.png"></image>
+          </navigator>
+          <navigator>
+            <image src="https://6c69-lipcloud-9xi74-7gez3k7ab9dfc7fb-1305629328.tcb.qcloud.la/%E5%9B%BE%E6%A0%87/%E6%B6%88%E6%81%AF1.png"></image>
+          </navigator>
+          <navigator style="position: relative;">
+            <image src="https://6c69-lipcloud-9xi74-7gez3k7ab9dfc7fb-1305629328.tcb.qcloud.la/%E5%9B%BE%E6%A0%87/%E8%BD%AC%E5%8F%91.png">
+            </image>
+            <button open-type="share" style="width: 30rpx; position: absolute;top: 0rpx;opacity:0.2;"></button>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

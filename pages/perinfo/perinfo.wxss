@@ -1,0 +1,59 @@
+page{
+    background: #eee;
+  }
+  .baseInfo{
+    padding:20rpx 10rpx;
+  }
+  
+  .baseInfo text{
+    font-size: 28rpx;
+    color: #6f6f6f;
+  }
+  
+  .list{
+    color: #6f6f6f;
+    font-size: 35rpx;
+  }
+  
+  .name,.sex,.phone,.info{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #eee;
+  }
+  .name input,.phone input,.info input{
+    text-align:right;
+  }
+  
+  .sex{
+    background: #fff;
+  }
+  
+  .radio radio{
+    margin-left: 30rpx;
+  }
+   
+  button{
+    background-color: pink;
+    color: #eee;
+    margin-top: 30rpx;
+    font-size: 25rpx;
+    width: 100%;
+  }
+ 
+  .modal view{
+    text-align: center;
+  }
+  
+  .savebtn {
+    width: 300rpx;
+    font-size:36rpx;
+    color: black;
+    padding: 6rpx;
+    border-radius: 20rpx;
+  }
+  
+  

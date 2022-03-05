@@ -1,0 +1,66 @@
+.user_info_wrap {
+  height: 360rpx;
+  overflow: hidden;
+  position: relative;
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 360rpx;
+  width: 750rpx;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: #000000;
+}
+.user_info_wrap .user_login .user_bg2 {
+  height: 360rpx;
+  width: 750rpx;
+  height: 50vh;
+  filter: blur(3rpx);
+}
+.user_info_wrap .user_login .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  color: "#fff";
+  font-size: 25rpx;
+  background-color: wheat;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.per_info{
+  margin-top: 10rpx;
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #aaa;
+}
+.exe_info{
+  margin-top: 10rpx;
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #aaa;
+}
+.nohealth{
+  margin-top: 10rpx;
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #aaa;
+}
+.aboutus{
+  margin-top: 10rpx;
+  padding: 20rpx ;
+  border-bottom: 1rpx solid #aaa;
+}

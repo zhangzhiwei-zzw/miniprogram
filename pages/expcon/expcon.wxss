@@ -1,0 +1,28 @@
+/* pages/expcon/expcon.wxss */
+.title {
+    text-align: center;
+    background-color:lightcyan;
+    font-size: 45rpx;
+}
+.item1 {
+    font-size: 32rpx;
+    background-color: mistyrose;
+    margin-bottom: 6rpx;
+}
+.block1 {
+    border:rgb(201, 197, 197) 5rpx solid ;
+    border-radius: 10rpx;
+    margin-bottom: 30rpx;
+    margin-top: 10rpx;
+}
+
+.item2 {
+    font-size: 32rpx;
+    background-color:honeydew;
+    margin-bottom: 6rpx;
+}
+
+image{
+    box-sizing: boder-box;
+    width: 100%;
+}

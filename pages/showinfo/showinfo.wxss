@@ -1,0 +1,54 @@
+/* pages/showinfo/showinfo.wxss */
+page{
+    background: #eee;
+  }
+  .baseInfo{
+    padding:20rpx 10rpx;
+  }
+  
+  .baseInfo text{
+    font-size: 28rpx;
+    color: #6f6f6f;
+  }
+  
+  .list{
+    color: #6f6f6f;
+    font-size: 35rpx;
+  }
+  
+  .name,.sex,.phone,.info{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #eee;
+  }
+  .name input,.phone input,.info input{
+    text-align:right;
+  }
+  
+  .sex{
+    background: #fff;
+  }
+  
+  .radio radio{
+    margin-left: 30rpx;
+  }
+ 
+  .modal view{
+    text-align: center;
+  }
+
+  .correct{
+    text-align:center;
+    margin-left: 32%;
+    margin-top: 50rpx;
+    padding: 25rpx;
+    border-radius: 20rpx;
+    background-color: pink;
+    width:fit-content;
+  }
+  
+  

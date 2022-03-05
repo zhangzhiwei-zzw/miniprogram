@@ -1,0 +1,24 @@
+
+  @font-face {
+    font-family: "iconfont"; /* Project id 3173753 */
+    src: url('//at.alicdn.com/t/font_3173753_siaki2jyd4.woff2?t=1644416414801') format('woff2'),
+         url('//at.alicdn.com/t/font_3173753_siaki2jyd4.woff?t=1644416414801') format('woff'),
+         url('//at.alicdn.com/t/font_3173753_siaki2jyd4.ttf?t=1644416414801') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 36rpx;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-cherry:before {
+    content: "\ecc0";
+  }
+  
+  .icon-dian:before {
+    content: "\ec1e";
+  }
+  
