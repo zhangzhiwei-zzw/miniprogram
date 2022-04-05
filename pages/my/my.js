@@ -29,7 +29,7 @@ Page({
       wx.getUserProfile({
         desc: '使用户得到更好的体验',
         success: (res) => {
-          console.log("获取用户信息成功", res)
+          // console.log("获取用户信息成功", res)
           let user = res.userInfo
           wx.setStorageSync('user', user)
           this.setData({
