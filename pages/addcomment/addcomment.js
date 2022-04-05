@@ -158,7 +158,6 @@ handleFormSubmit(){
           })
         }
       })
-        console.log("只提交了文本");
         wx.navigateBack({
           delta: 1,
         })
@@ -168,7 +167,6 @@ handleFormSubmit(){
 handleChoosePos(){
   wx.chooseLocation({
     success:(res)=>{
-      console.log(res.name)
       this.setData({
         position:res.name
       })
