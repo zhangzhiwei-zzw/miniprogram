@@ -65,16 +65,13 @@
 .operation{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1rpx solid #EEE;
 }
 .operation1 {
     left: 20rpx;
     margin-top: 10rpx;
 }
 
-.operation2 {
-    right: 20rpx;
-    margin-top: 15rpx;
-}
 
 .btoper1 {
     background: white;
@@ -118,6 +115,9 @@
     /* border-radius: 16rpx; */
     padding: 10rpx;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .result_info {
@@ -156,3 +156,6 @@
     display: flex;
 }
 
+.device_item_hover {
+    background-color: rgba(0, 0, 0, .1);
+}

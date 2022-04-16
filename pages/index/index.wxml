@@ -33,7 +33,6 @@ module.exports.len = function(arr) {
   <view>
     <text style="font-size: 32rpx">已连接到 {{name}}</text>
     <view class="operation">
-    <!-- <button class="btoper" wx:if="{{canWrite}}" size="mini" bindtap="writeBLECharacteristicValue">写数据</button> -->
     <button class="btoper" size="mini" bindtap="closeBLEConnection">断开连接</button>
     </view>
   </view>

@@ -1,4 +1,13 @@
 <!--pages/exercise/exercise.wxml-->
+<wxs module="utils">
+module.exports.max = function(n1, n2) {
+  return Math.max(n1, n2)
+}
+module.exports.len = function(arr) {
+  arr = arr || []
+  return arr.length
+}
+</wxs>
 <view class="nameinfo">
     <text>动作库 - 四向点头</text>
 </view>
@@ -24,15 +33,15 @@
         <text style="font-size: 32rpx">点击连接：{{item.name}}</text>
         <text style="font-size: 24rpx">\n信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</text>
         </view>
-        <view class="operation2">
-            <button class="btoper1" size="mini" bindtap="closeBLEConnection">断开连接</button>
-        </view>
     </view>    
     </view>
 </scroll-view>
 
 <view class="connected_info" wx:if="{{connected}}">
     <text style="font-size: 32rpx">已连接到 {{name}}</text>
+    <view class="operation">
+    <button class="btoper" size="mini" bindtap="closeBLEConnection">断开连接</button>
+    </view>
 </view>
 <view class="connected_info" wx:else>
     <text>未连接设备</text>
