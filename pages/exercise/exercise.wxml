@@ -19,6 +19,7 @@
 <scroll-view class="device_list" scroll-y scroll-with-animation>
     <view class="nodevice" wx:if="{{devices.length==0}}">未检测到设备</view>
     <view wx:if="{{devices.length!=0}}" wx:for="{{devices}}" wx:key="index" data-device-id="{{item.deviceId}}" data-name="{{item.name || item.localName}}" bindtap="createBLEConnection" hover-class="device_item_hover">
+    <view class="operation">
         <view class="operation1">
         <text style="font-size: 32rpx">点击连接：{{item.name}}</text>
         <text style="font-size: 24rpx">\n信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</text>
@@ -26,6 +27,7 @@
         <view class="operation2">
             <button class="btoper1" size="mini" bindtap="closeBLEConnection">断开连接</button>
         </view>
+    </view>    
     </view>
 </scroll-view>
 

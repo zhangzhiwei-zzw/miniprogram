@@ -47,8 +47,12 @@ module.exports.len = function(arr) {
 <text>\n未连接设备</text>
 </view>
 
+<view class="imgs">
+  <image mode="widthFix" src="{{imgurl}}" />
+</view>
+
 <view class="navgroup">
-<image mode="widthFix" src="/imgs/index_love.jpeg" />
+
 <view class="nav1">
 <navigator url="/pages/expcon/expcon">颈椎状态说明</navigator>
 </view>

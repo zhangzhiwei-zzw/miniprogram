@@ -1,2 +1,4 @@
-<!--pages/nohealth/nohealth.wxml-->
-<text>暂时还未开放低头记录功能哦~</text>
+<view class="main">
+  <image src="/imgs/ditou.jpg"></image>
+  <image src="/imgs/duanlian.jpg"></image>
+</view>

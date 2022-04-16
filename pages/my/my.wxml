@@ -19,11 +19,8 @@
 <view class="per_info" bindtap="handlepertap">
     个人信息
 </view>
-<view class="exe_info">
-    <navigator url="/pages/exedes/exedes">运动记录</navigator>
-</view>
 <view class="nohealth">
-    <navigator url="/pages/nohealth/nohealth">低头记录</navigator>
+    <navigator url="/pages/nohealth/nohealth">历史记录</navigator>
 </view>
 <view class="aboutus">
     <navigator url="/pages/aboutus/aboutus">关于我们</navigator>

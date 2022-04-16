@@ -48,7 +48,7 @@
 }
 
 .device_list {
-    height: 110rpx;
+    height: 300rpx;
     margin-top: 0;
     border: 5rpx solid rgb(136, 135, 135);
     /* border-radius: 16rpx; */
@@ -56,21 +56,22 @@
 }
 
 .device_item {
-    padding: 20rpx;
+    padding: 10rpx;
     color: #666;
     width: 100%;
+    border-bottom: 1rpx solid #EEE;
+    height: 100rpx;
 }
-
+.operation{
+    display: flex;
+    justify-content: space-between;
+}
 .operation1 {
-    position: absolute;
-    display: inline-block;
     left: 20rpx;
     margin-top: 10rpx;
 }
 
 .operation2 {
-    position: absolute;
-    display: inline-block;
     right: 20rpx;
     margin-top: 15rpx;
 }

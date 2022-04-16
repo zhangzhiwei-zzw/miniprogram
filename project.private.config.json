@@ -23,6 +23,13 @@
           "pathName": "pages/addcomment/addcomment",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "锻炼",
+          "pathName": "pages/nohealth/nohealth",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
         }
       ]
     }

@@ -39,6 +39,19 @@ function judgecon(num){
   return "您当前颈椎状态差，为了您的健康，请立刻纠正您的坐姿";
 }
 
+function imgstate(num){
+  num=num>180?num-360:num,
+  num=Math.abs(num);
+  if(num>=0&&num<15)
+  return "/imgs/15.jpg";
+  else if(num>=15&&num<30)
+  return "/imgs/30.jpg";
+  else if(num>=30&&num<45)
+  return "/imgs/45.jpg";
+  else
+  return "/imgs/60.jpg";
+}
+
 // ArrayBuffer转16进度字符串示例
 function ab2hex(buffer) {
   var hexArr = Array.prototype.map.call(
@@ -58,7 +71,8 @@ Page({
     RollH: 0,
     RollL: 0, 
     Roll: 0,
-    condition: "0"
+    condition: "0",
+    imgurl:"/imgs/15.jpg"
   },
   openBluetoothAdapter() {
     wx.openBluetoothAdapter({
@@ -231,6 +245,7 @@ Page({
         RollH: hextodec(this.data.chs[0].value[30])*16+hextodec(this.data.chs[0].value[31]),
         Roll: ((this.data.RollH<<8)|this.data.RollL)/32768*180,
         condition: judgecon(this.data.Roll),
+        imgurl:imgstate(this.data.Roll)
       })
     })
   },

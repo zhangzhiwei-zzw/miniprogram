@@ -112,39 +112,35 @@ page {
 
 .navgroup {
     margin-top: 10rpx;
-    overflow: hidden;
-    position: relative;
 }
 
 .navgroup .nav1 {
-    margin-top: 20rpx; 
-    color: rgb(22, 152, 196); 
-    margin-left: 50%; margin-right: 15%; 
-    text-align: center; 
-    border: 6rpx solid lightgray; 
-    height: 50rpx;
-    position: absolute;
-    /* left: 30%; */
-    transform: translateX(-50%);
-    top: 20%;
+    text-align: center;
     background-color: rgb(247, 193, 201);
+    border: 6rpx solid lightgray; 
+    color: rgb(22, 152, 196);
     width:500rpx;
+    margin-left: 15%; margin-right: 15%; 
 }
 
 .navgroup .nav2 {
-    margin-top: 20rpx; 
-    color: rgb(22, 152, 196); 
-    margin-left: 15%; margin-right: 15%; 
-    text-align: center; 
+   text-align: center;
+   margin-top: 20rpx;
+   margin-bottom: 40rpx;
+   background-color: rgb(247, 193, 201);
     border: 6rpx solid lightgray; 
-    height: 50rpx;
-    position: absolute;
-    bottom: 50%;
-    background-color: rgb(247, 193, 201);
+    color: rgb(22, 152, 196); 
     width:500rpx;
+    margin-left: 15%; margin-right: 15%; 
 }
 
 image{
     box-sizing: boder-box;
     width: 100%;
+}
+
+.imgs{
+    margin: auto;
+    margin-top: 10rpx;
+    width: 50%;
 }
