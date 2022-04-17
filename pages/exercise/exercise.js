@@ -36,8 +36,8 @@ function dealdata(num){
 
 // 运动状态输出
 function judgecon(num1,num2){
-    dealdata(num1);
-    dealdata(num2);
+    num1=dealdata(num1);
+    num2=dealdata(num2);
     // var sum=Math.pow(num1,2)+Math.pow(num2,2)+Math.pow(num2,2);
     // sum=Math.sqrt(sum,2);
     if(num1<=45)
