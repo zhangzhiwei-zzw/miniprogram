@@ -3,3 +3,7 @@
   padding-top: 20rpx;
   text-align: center;
 }
+.word{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+}

@@ -1,4 +1,7 @@
 <view class="main">
-  <image src="/imgs/ditou.jpg"></image>
-  <image src="/imgs/duanlian.jpg"></image>
+  <view class="word">您今天共佩戴设备556min</view>
+  <image src="/imgs/jinri.jpg" mode="widthFix"></image>
+  <view class="word">您今天共锻炼了3次</view>
+  <view class="word">您今日颈椎状态评分为82分</view>
+  <image src="/imgs/30days.jpg" mode="widthFix"></image>
 </view>
