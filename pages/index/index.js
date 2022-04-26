@@ -238,6 +238,7 @@ Page({
       // var RollH=hextodec(this.data.chs[0].value[30])*16+hextodec(this.data.chs[0].value[31]);
       // var PitchL=hextodec(this.data.chs[0].value[32])*16+hextodec(this.data.chs[0].value[33]);
       // var PitchH=hextodec(this.data.chs[0].value[34])*16+hextodec(this.data.chs[0].value[35]);
+      // test
 
       this.setData({
         // 计算偏航角z轴Yaw=((YawH<<8)|YawL)/32768*180
