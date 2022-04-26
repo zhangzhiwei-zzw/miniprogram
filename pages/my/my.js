@@ -16,6 +16,7 @@ Page({
               },
               success: function (data) {
                 // wx.setStorageSync('session_key', data.data.session_key)
+                
                 wx.setStorageSync('openid', data.data.openid)
               }
             })
