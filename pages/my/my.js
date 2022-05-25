@@ -11,6 +11,7 @@ Page({
             wx.request({
               url: 'https://www.zzwwork.xyz:8081/wxUserInfo',
               //获取session_key用于获取unionid
+			  
               data: {
                 code: res.code
               },
